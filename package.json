@@ -1,0 +1,8 @@
+{
+  "name": "contentia-legal",
+  "version": "1.0.0",
+  "description": "This repo stores the legal files used by Contentia.",
+  "devDependencies": {
+    "prettier": "3.0.3"
+  }
+}
