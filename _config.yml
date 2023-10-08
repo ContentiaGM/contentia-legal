@@ -18,19 +18,35 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Contentia - Termos e Políticas
+### Gihub Pages settings (DO NOT CHANGE)
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+### END Github Pages settings (DO NOT CHANGE)
+
+
+source: docs
+title: Contentia
 email: eai@contentia.ai
 description: >- # this means to ignore newlines until "baseurl:"
   Contentia é uma plataforma de inteligência artificial que ajuda empresas a gerar conteúdo de forma automática. Veja aqui os termos e políticas de uso da plataforma.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "terms.contentia.ai" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
 # Build settings
 theme: minima
-# plugins:
-#   - jekyll-feed
+plugins:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -56,4 +72,4 @@ exclude:
   - prettierrc
   - README.md
   - node_modules
-  - .prettierignore
+  - CNAME
